@@ -1,10 +1,20 @@
 # bupa-website-pom Source(https://www.bupa.co.uk/)
 
 ## Description
-
+This is a page object model to make automation testing easier. This uses capybara to automate web interactions. Cucumber was used to execute these tests. In order to get the tests Gherkin syntax is what is used with cucumber which is given when then. 
+```
+Scenario: Inputting an incorrect username or password will produce
+    Given I access the Bupa signin section of the Bupa webpage
+    And I input an incorrect username
+    And I input a incorrect password
+    When I try to log in
+    Then I recieve an error of not finding the account or session timed out
+```
+After this is written into a features file, what happens is syntax is printed in the terminal which helps assist testers in devloping tests with a mutually understood language.
 
 ### Languages and Tools used
 * Ruby
+* Capybara
 * Cucumber(with Gherkin syntax)
 * Page Object Model
 
@@ -33,4 +43,4 @@ The super class is  ```bupa_webpage.rb``` if you instaniate it, some of the obje
 
 ```
 ### Snippet explaination
-The above code snippet is how to instaniate the BupaWebpage's, this will get you the data you.need.
+The above code snippet is how to instaniate the BupaWebpage's, this will get you the data you need.
