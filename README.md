@@ -14,6 +14,7 @@ After this is written into a features file, what happens is syntax is printed in
 
 ### Languages and Tools used
 * Ruby
+* Selenium
 * Capybara
 * Cucumber(with Gherkin syntax)
 * Page Object Model
