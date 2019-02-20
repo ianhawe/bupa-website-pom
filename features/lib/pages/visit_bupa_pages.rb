@@ -1,5 +1,5 @@
 require 'capybara/dsl'
-# This page will hold all the URL links to different sections of the bbc website
+# This page will hold all the URL links to different sections of the Bupa website
 class VisitBupaPage
   include Capybara::DSL
 
